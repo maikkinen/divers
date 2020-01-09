@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import ImageBox from './ImageBox'
+import Ball from '../animations/Ball'
 
 import dock from '../pics/bg_elems_cabin.png'
 import iland from '../pics/bg_iland.png'
@@ -82,6 +83,10 @@ const Grid = () => {
         </Col>
         <Col style={gridElemStyle}>
           <ImageBox image={divers} style={imgStyle}/>
+        </Col>
+        <Col></Col>
+        <Col>
+          <Ball/>
         </Col>
       </Row>
       <Row style={rowStyle} >
