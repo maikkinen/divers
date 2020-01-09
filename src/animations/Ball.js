@@ -15,12 +15,15 @@ const spin = keyframes` {
 
 const Ball = styled.div`
   width: 64px;
-  height 64px;
+  height: 64px;
+  opacity: 0.8; 
   border-radius: 50%;
   margin: 0 auto;
-  background-color: #08aeea;
-  background-image: linear-gradient(0deg, #08aeea 0%, #2af598 100%);
-  animation: ${morph} 1s linear infinite, ${spin} 1s ease-in-out infinite;
+  background-color: #e39d05;
+  background-image: linear-gradient(0deg, #e39d05 10%, #eb5307 90%);
+  animation: ${spin} 5s ease-in-out infinite;
 `
+
+//animation: ${morph} 1s linear infinite, ${spin} 1s ease-in-out infinite;
 
 export default Ball

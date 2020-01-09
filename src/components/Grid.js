@@ -68,26 +68,22 @@ const Grid = () => {
       <Row style={rowStyle} >
         <Col style={gridElemStyle}></Col>
         <Col style={gridElemStyle}>
-          <ImageBox image={iland} style={{opacity: '0.8', height: '100%'}}/>
-        </Col>   
-        <Col style={gridElemStyle}></Col>  
-        
-        
-        
+          <Ball />
+          <ImageBox image={iland} style={{ opacity: '0.8', height: '80%' }} />
+        </Col>
+        <Col style={gridElemStyle}></Col>
       </Row>
       <Row style={rowStyle}>
+        <Col></Col>
         <Col style={gridElemStyle}>
         </Col>
         <Col style={gridElemStyle}>
-          <ImageBox image={mountains} style={{opacity: '0.5'}}/>
+          <ImageBox image={mountains} style={{ opacity: '0.5' }} />
         </Col>
         <Col style={gridElemStyle}>
-          <ImageBox image={divers} style={imgStyle}/>
+          <ImageBox image={divers} style={imgStyle} />
         </Col>
         <Col></Col>
-        <Col>
-          <Ball/>
-        </Col>
       </Row>
       <Row style={rowStyle} >
         <Col style={gridElemStyle}></Col>
