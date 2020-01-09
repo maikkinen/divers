@@ -7,7 +7,7 @@ import watercolor from './pics/watercol_texture.jpg'
 const bgStyle = {
   margin: '0',
   width: '100%',
-  height: '35em',
+  height: '90em',
   backgroundImage: `url(${watercolor})`,
   //display: 'flex',
   //alignItems: 'center',

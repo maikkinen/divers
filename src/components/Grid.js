@@ -22,7 +22,8 @@ const containerStyle = {
   backgroundPosition: 'center',
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
-  overflow: 'hidden' //change this to get scrollable
+  overflow: 'hidden', //change this to get scrollable,
+  //backgroundColor: 'yellow'
 }
 
 const rowStyle = {
@@ -44,15 +45,15 @@ const fullWidthRow = {
 }
 
 const imgStyle = {
-  width: '120%',
-  height: '200%',
+  width: '100%',
+  height: '100%',
   padding: '0',
   margin: '0'
 }
 
 const gridElemStyle = {
-  width: '95%',
-  height: '8em',
+  width: '30em',
+  height: '15em',
   //borderRadius: '1em',
   //backgroundColor: 'red',
   //padding: '0.5em',
@@ -65,10 +66,11 @@ const Grid = () => {
     <Container style={containerStyle}>
       <Row style={rowStyle} >
         <Col style={gridElemStyle}></Col>
-        <Col style={gridElemStyle}></Col>  
         <Col style={gridElemStyle}>
           <ImageBox image={iland} style={{opacity: '0.8', height: '100%'}}/>
         </Col>   
+        <Col style={gridElemStyle}></Col>  
+        
         
         
       </Row>
