@@ -32,7 +32,7 @@ const rowStyle = {
   height: '100%',
   borderRadius: '1em',
   //backgroundColor: 'blue',
-  margin: '0em',
+  margin: '0.25em',
   padding: '1em'
 }
 
@@ -57,8 +57,8 @@ const gridElemStyle = {
   height: '15em',
   //borderRadius: '1em',
   //backgroundColor: 'red',
-  //padding: '0.5em',
-  margin: '0.05em'
+  padding: '0.25em',
+  margin: '0.05em',
 }
 
 

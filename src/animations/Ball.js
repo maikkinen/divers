@@ -20,7 +20,7 @@ const Ball = styled.div`
   border-radius: 50%;
   margin: 0 auto;
   background-color: #e39d05;
-  background-image: linear-gradient(0deg, #e39d05 10%, #eb5307 90%);
+  background-image: linear-gradient(0deg, #e39d05 20%, #eb5307 80%);
   animation: ${spin} 5s ease-in-out infinite;
 `
 
