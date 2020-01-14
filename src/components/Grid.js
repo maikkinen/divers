@@ -1,4 +1,6 @@
 import React from 'react'
+import { Table, Tbody, Tr, Td } from 'react-super-responsive-table'
+import 'react-super-responsive-table/dist/SuperResponsiveTable'
 import { Container, Row, Col } from 'react-bootstrap'
 import ImageBox from './ImageBox'
 import Ball from '../animations/Ball'
@@ -61,6 +63,35 @@ const gridElemStyle = {
   margin: '0.05em',
 }
 
+//(Single) Block Content style
+const b2 = {
+  //backgroundColor: 'red',
+  height: '20%',
+  width: '100/6',
+  margin: '0',
+  //padding: '1%',
+  //color: 'green',
+}
+
+//Rows
+const r2 = {
+  backgroundColor: 'red',
+  //color: 'blue',
+  //height: '20px',
+  //width: '100%',
+  //margin: '2em',
+  //padding: '3em',
+  //aspectRatio: ' 2 / 1 ' would be the thing w/React Native. Wish I had that.
+  //embedding text in 'scrollView' may be worth trying!
+}
+
+const t1 = {
+  backgroundColor: 'blue',
+  height: '80%',
+  width: '100%',
+  overflow: 'hidden',
+
+}
 
 const Grid = () => {
   return (
@@ -96,3 +127,58 @@ const Grid = () => {
 }
 
 export default Grid
+
+/*
+const Grid = () => {
+  return (
+    <Table style={t1}>
+      <Tbody>
+        <Tr style={r2} >
+          <Td style={b2}>Yolo1 </Td>
+          <Td style={b2}>Yolo2 </Td>
+          <Td style={b2}>Yolo3
+            <Ball />
+          </Td>
+          <Td style={b2}>Yolo1 </Td>
+          <Td style={b2}>Yolo1 </Td>
+          <Td style={b2}>Yolo1 </Td>
+          <Td style={b2}>Yolo1 </Td>
+        </Tr>
+
+        <Tr style={r2} >
+          <Td style={b2}>Yolo2 </Td>
+          <Td style={b2}>
+            <ImageBox image={iland} style={{ opacity: '0.8', height: '100%' }} />
+          </Td>
+          <Td style={b2}></Td>
+          
+          <Td style={b2}>Yolo2 </Td>
+          <Td style={b2}>Yolo2 </Td>
+          <Td style={b2}>Yolo2 </Td>
+          <Td style={b2}>Yolo2 </Td>
+        </Tr>
+        <Tr style={r2}>
+          <Td style={b2}>Yolo3 </Td>
+          <Td style={b2}>Yolo3 </Td>
+          <Td style={b2}>Yolo3 </Td>
+          <Td style={b2}>Yolo3 </Td>
+          <Td style={b2}>Yolo3 </Td>
+          <Td style={b2}>Yolo3 </Td>
+          <Td style={b2}>Yolo3 </Td>
+        </Tr>
+        <Tr style={r2}>
+          <Td style={b2}>Yolo3 </Td>
+          <Td style={b2}>Yolo3 </Td>
+          <Td style={b2}>Yolo3 </Td>
+          <Td style={b2}>Yolo3 </Td>
+          <Td style={b2}>Yolo3 </Td>
+          <Td style={b2}>Yolo3 </Td>
+          <Td style={b2}>Yolo3 </Td>
+        </Tr>
+      </Tbody>
+    </Table>
+  )
+}
+
+export default Grid
+*/
