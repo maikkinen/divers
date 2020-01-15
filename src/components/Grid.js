@@ -112,7 +112,7 @@ const Grid = () => {
           <ImageBox image={mountains} style={{ opacity: '0.5' }} />
         </Col>
         <Col style={gridElemStyle}>
-          <ImageBox image={divers} style={imgStyle} />
+          <ImageBox class='diversBoat' image={divers} style={imgStyle} />
         </Col>
         <Col></Col>
       </Row>
