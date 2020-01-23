@@ -4,6 +4,7 @@ import 'react-super-responsive-table/dist/SuperResponsiveTable'
 import { Container, Row, Col } from 'react-bootstrap'
 import ImageBox from './ImageBox'
 import Ball from '../animations/Ball'
+import Wave from '../animations/Waves'
 
 import dock from '../pics/bg_elems_cabin.png'
 import iland from '../pics/bg_iland.png'
@@ -20,7 +21,7 @@ const containerStyle = {
   minHeight: '100%',
   //backgroundImage: `url(${watercolor})`,
   display: 'flex',
-  //alignItems: 'center',
+  alignItems: 'center',
   justifyContent: 'center',
   backgroundPosition: 'center',
   backgroundSize: 'cover',
@@ -34,17 +35,17 @@ const rowStyle = {
   height: '100%',
   borderRadius: '1em',
   //backgroundColor: 'blue',
-  margin: '0.25em',
+  margin: '1em',
   padding: '1em'
 }
 
 const fullWidthRow = {
-  width: '95%',
+  width: '100vw',
+  position: 'relative',
   height: '1em',
   borderRadius: '0em',
-  backgroundColor: 'blue',
+  //backgroundColor: 'red',
   margin: '0em',
-  padding: '1em'
 }
 
 const imgStyle = {
@@ -60,37 +61,7 @@ const gridElemStyle = {
   //borderRadius: '1em',
   //backgroundColor: 'red',
   padding: '0.25em',
-  margin: '0.05em',
-}
-
-//(Single) Block Content style
-const b2 = {
-  //backgroundColor: 'red',
-  height: '20%',
-  width: '100/6',
-  margin: '0',
-  //padding: '1%',
-  //color: 'green',
-}
-
-//Rows
-const r2 = {
-  backgroundColor: 'red',
-  //color: 'blue',
-  //height: '20px',
-  //width: '100%',
-  //margin: '2em',
-  //padding: '3em',
-  //aspectRatio: ' 2 / 1 ' would be the thing w/React Native. Wish I had that.
-  //embedding text in 'scrollView' may be worth trying!
-}
-
-const t1 = {
-  backgroundColor: 'blue',
-  height: '80%',
-  width: '100%',
-  overflow: 'hidden',
-
+  margin: '2%',
 }
 
 const Grid = () => {
@@ -103,6 +74,9 @@ const Grid = () => {
           <ImageBox image={iland} style={{ opacity: '0.8', height: '80%' }} />
         </Col>
         <Col style={gridElemStyle}></Col>
+        <Col style={fullWidthRow}>
+          <Wave/>
+        </Col>
       </Row>
       <Row style={rowStyle}>
         <Col></Col>
@@ -114,8 +88,8 @@ const Grid = () => {
         <Col style={gridElemStyle}>
           <ImageBox class='diversBoat' image={divers} style={imgStyle} />
         </Col>
-        <Col></Col>
       </Row>
+      
       <Row style={rowStyle} >
         <Col style={gridElemStyle}></Col>
         <Col style={gridElemStyle}>
@@ -151,7 +125,7 @@ const Grid = () => {
             <ImageBox image={iland} style={{ opacity: '0.8', height: '100%' }} />
           </Td>
           <Td style={b2}></Td>
-          
+
           <Td style={b2}>Yolo2 </Td>
           <Td style={b2}>Yolo2 </Td>
           <Td style={b2}>Yolo2 </Td>
