@@ -1,7 +1,6 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import Grid from './components/Grid'
-import Wave from './animations/Waves'
 
 import watercolor from './pics/watercol_texture.jpg'
 
@@ -26,7 +25,6 @@ const App = () => {
   return (
     <Container style={bgStyle}>
       <Grid />
-      
     </Container>
   )
 }

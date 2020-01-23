@@ -1,13 +1,29 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import { Image } from 'react-bootstrap'
-import { keyframes } from 'styled-components'
-import wave from '../pics/bluewaves.png'
+import wave from '../pics/wave.png'
 
-const Wave = () => {
+
+const OneWave = () => {
   return (
-    <div><Image src={wave}></Image></div>
+    <div className='singleWave'>
+    </div>
   )
 }
 
-export default Wave
+const Waves = () => {
+  return (
+    <section>
+      <div className='singleWave waveAnimation'>
+        <Image src={wave}></Image>
+      </div>
+    </section>
+  )
+}
+
+export default Waves
+
+/**
+ * <Wave className='waveAnimation2'/>
+      <Wave className='waveAnimation3'/>
+ */

@@ -1,10 +1,9 @@
 import React from 'react'
-import { Table, Tbody, Tr, Td } from 'react-super-responsive-table'
 import 'react-super-responsive-table/dist/SuperResponsiveTable'
 import { Container, Row, Col } from 'react-bootstrap'
 import ImageBox from './ImageBox'
 import Ball from '../animations/Ball'
-import Wave from '../animations/Waves'
+import Waves from '../animations/Waves'
 
 import dock from '../pics/bg_elems_cabin.png'
 import iland from '../pics/bg_iland.png'
@@ -75,7 +74,7 @@ const Grid = () => {
         </Col>
         <Col style={gridElemStyle}></Col>
         <Col style={fullWidthRow}>
-          <Wave/>
+          <Waves/>
         </Col>
       </Row>
       <Row style={rowStyle}>

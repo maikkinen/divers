@@ -15,14 +15,13 @@
 
 /* Shall I take these to the Grid, as it appears that these should affect that one the most?*/
 
-
 body,
 html {
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	font-family: 'Helvetica', sans-serif;
-	/*background: rgb(26, 188, 156);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica", sans-serif;
+  /*background: rgb(26, 188, 156);
 	background: -moz-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
 	background: -webkit-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
 	background: linear-gradient(135deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
@@ -30,46 +29,36 @@ html {
 }
 
 .container {
-	/*width: 100%;
+  /*width: 100%;
 	height: 100%;*/
-	display: flex;
+  display: flex;
 }
 
 @keyframes float {
-	0% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-		transform: translatey(0px);
-	}
-	50% {
-		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
-		transform: translatey(-20px);
-	}
-	100% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-		transform: translatey(0px);
-	}
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
 }
 
 .diversBoat {
-	/*width: 150px;
+  /*width: 150px;
 	height: 150px;*/
-	box-sizing: border-box;
-	border: 5px white solid;
-	border-radius: 50%;
-	overflow: hidden;
-	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-	transform: translatey(0px);
-  animation: float 6s ease-in-out infinite;
-}
-
-.waveContainer {
-  margin: 0;
-  padding: 0;
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background: #3586ff;
+  box-sizing: border-box;
+  border: 5px white solid;
+  border-radius: 50%;
   overflow: hidden;
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
 }
 
 .singleWave {
@@ -78,28 +67,54 @@ html {
   left: 0;
   width: 100%;
   height: 100px;
-  background: '../src/pics/wave.jpg';
-  background-size: '1000px, 100px'
+  background: url("../src/pics/wave.png");
+  background-size: "1000px, 100px";
+  top: 0.7vh;
+  opacity: 0.7;
 }
 
 .waveAnimation {
-  animation: 'animate 30s linear infinite';
+  animation: "animate	30s linear infinite";
   z-index: 1000;
-  opacity: 1;
+  opacity: 0.8;
   animation-delay: 0s;
   bottom: 0;
 }
 
-@keyframes animate
-{
-  0%
-  {
-    background-position-x: 0,
+.waveAnimation2 {
+  animation: "animate2 30s linear infinite";
+  z-index: 999;
+  opacity: 0.8;
+  animation-delay: 0s;
+  bottom: -5;
+  opacity: 0.5;
+}
 
+.waveAnimation3 {
+  animation: "animate2 10s linear infinite";
+  z-index: 1001;
+  opacity: 0.2;
+  animation-delay: 10s;
+  bottom: 0;
+  opacity: 0.5;
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: 0;
   }
-  100%
-  {
-    background-position-x: 1000px,
+  100% {
+    background-position-x: 1000px;
   }
 }
 
+@keyframes animate2
+{	
+	
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -1000px;
+  }
+}
