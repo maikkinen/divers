@@ -21,7 +21,7 @@ const Ball = styled.div`
   margin: 0 auto;
   background-color: #e39d05;
   background-image: linear-gradient(0deg, #e39d05 20%, #eb5307 80%);
-  animation: ${spin} 5s ease-in-out infinite;
+  animation: ${morph} 1s linear infinite, ${spin} 1s ease-in-out infinite;
 `
 
 //animation: ${morph} 1s linear infinite, ${spin} 1s ease-in-out infinite;
