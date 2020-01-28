@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 import ImageBox from './ImageBox'
 import Ball from '../animations/Ball'
 import Waves from '../animations/Waves'
+import DiversBoat from '../animations/Divers'
 
 import dock from '../pics/bg_elems_cabin.png'
 import iland from '../pics/bg_iland.png'
@@ -33,32 +34,43 @@ const rowStyle = {
   width: '33%',
   height: '100%',
   borderRadius: '1em',
-  //backgroundColor: 'blue',
+  backgroundColor: 'blue',
   margin: '1em',
   padding: '1em'
 }
 
 const fullWidthRow = {
-  width: '100vw',
-  position: 'relative',
+  width: '100%',
+  //position: 'relative',
   height: '1em',
   borderRadius: '0em',
-  //backgroundColor: 'red',
+  backgroundColor: 'yellow',
+  margin: '0em',
+  overflow: 'hidden'
+}
+
+const waveRow = {
+  width: '100%',
+  //position: 'relative',
+  height: '1em',
+  borderRadius: '0em',
+  backgroundRepeat: 'no-repeat',
+  backgroundColor: 'yellow',
   margin: '0em',
 }
 
-const imgStyle = {
-  width: '100%',
-  height: '100%',
-  padding: '0',
-  margin: '0'
+const gridDiversStyle = {
+  width: '50%',
+  height: '50%',
+  backgroundRepeat: 'no-repeat',
+  overflow: 'hidden',
+  backgroundColor: 'red',
 }
 
 const gridElemStyle = {
   width: '30em',
   height: '15em',
-  //borderRadius: '1em',
-  //backgroundColor: 'red',
+  backgroundColor: 'red',
   padding: '0.25em',
   margin: '2%',
 }
@@ -73,9 +85,9 @@ const Grid = () => {
           <ImageBox image={iland} style={{ opacity: '0.8', height: '80%' }} />
         </Col>
         <Col style={gridElemStyle}></Col>
-        <Col style={fullWidthRow}>
-          <Waves/>
-        </Col>
+        <Col style={fullWidthRow}>Yolo</Col>
+        <Waves style={waveRow} />
+        <Col style={fullWidthRow}>Yolo</Col>
       </Row>
       <Row style={rowStyle}>
         <Col></Col>
@@ -85,10 +97,10 @@ const Grid = () => {
           <ImageBox image={mountains} style={{ opacity: '0.5' }} />
         </Col>
         <Col style={gridElemStyle}>
-          <ImageBox class='diversBoat' image={divers} style={imgStyle} />
+          <DiversBoat style={gridDiversStyle} />
         </Col>
       </Row>
-      
+
       <Row style={rowStyle} >
         <Col style={gridElemStyle}></Col>
         <Col style={gridElemStyle}>
