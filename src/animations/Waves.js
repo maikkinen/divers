@@ -6,9 +6,9 @@ import styled, { keyframes } from 'styled-components'
 
 
 const waving1 = keyframes` {
-  0% { left: 0; }
-  50% { left: 200px; }
-  100% { left: 0; }
+  0% { left: -50px; }
+  50% { left: 20px; }
+  100% { left: -50px; }
 }`
 
 const waving2 = keyframes` {
@@ -18,11 +18,9 @@ const waving2 = keyframes` {
 }`
 
 const higher = keyframes` {
-  0% { top: 100px; }
-  50% { 
-    top: 120px; 
-  }
-  100% { top: 100px; }
+  0% { height: 13%; }
+  50% { height: 15%; }
+  100% { height: 13%; }
 }`
 
 const wavering = keyframes` {
@@ -33,27 +31,28 @@ const wavering = keyframes` {
 
 const OneWave = styled.div`
   width: 100%;
-  height: 100%;
-  opacity: 0.6;
-  margin: 0 auto;
-  background-image: url(${wave});
-  position: relative;
-  repeat: no-repeat;
-  animation: ${higher} 10s ease-in-out infinite;
-`
-
-const OneWave2 = styled.div`
-  width: 100%;
-  height: 150%;
+  height: 20%;
   opacity: 0.6;
   margin: 0 auto;
   background-image: url(${wave});
   position: absolute;
-  top: 1vh;
-  left: 0;
-  repeat: false;
+  left: 0px;
+  top: 120vh;
+  background-repeat: no-repeat; 
+`
+
+const OneWave2 = styled.div`
+  width: 98%;
+  height: 13%;
+  opacity: 0.2;
+  margin: 0 auto;
+  background-image: url(${wave});
+  position: absolute;
+  left: 1%;
+  top: 120vh;
+  background-repeat: repeat-x;
   animation-delay: 3s;
-  animation: ${waving2} 20s linear infinite
+  animation: ${wavering} 5s ease-out infinite, ${higher} 10s linear infinite
 `
 const OneWave3 = styled.div`
   width: 100%;
@@ -64,7 +63,6 @@ const OneWave3 = styled.div`
   position: absolute;
   top: 1vh;
   left: 0;
-  repeat: false;
   animation-delay: 3s;
   animation: ${wavering} 10s linear infinite
 `
@@ -75,6 +73,7 @@ const Waves = () => {
   return (
     <div>
       <OneWave />
+      <OneWave2 />
     </div>
   )
 }

@@ -19,7 +19,6 @@ const containerStyle = {
   padding: '0',
   width: '100%',
   minHeight: '100%',
-  //backgroundImage: `url(${watercolor})`,
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
@@ -34,9 +33,10 @@ const rowStyle = {
   width: '33%',
   height: '100%',
   borderRadius: '1em',
-  backgroundColor: 'blue',
   margin: '1em',
-  padding: '1em'
+  padding: '1em',
+  overflow: 'hidden',
+  //backgroundColor: 'blue',
 }
 
 const fullWidthRow = {
@@ -44,35 +44,25 @@ const fullWidthRow = {
   //position: 'relative',
   height: '1em',
   borderRadius: '0em',
-  backgroundColor: 'yellow',
   margin: '0em',
-  overflow: 'hidden'
-}
+  //backgroundColor: 'yellow',
 
-const waveRow = {
-  width: '100%',
-  //position: 'relative',
-  height: '1em',
-  borderRadius: '0em',
-  backgroundRepeat: 'no-repeat',
-  backgroundColor: 'yellow',
-  margin: '0em',
 }
 
 const gridDiversStyle = {
   width: '50%',
   height: '50%',
-  backgroundRepeat: 'no-repeat',
   overflow: 'hidden',
-  backgroundColor: 'red',
+  backgroundRepeat: 'no-repeat',
+  //backgroundColor: 'red',
 }
 
 const gridElemStyle = {
   width: '30em',
   height: '15em',
-  backgroundColor: 'red',
   padding: '0.25em',
-  margin: '2%',
+  margin: '0.25em',
+  //backgroundColor: 'red',
 }
 
 const Grid = () => {
@@ -85,9 +75,9 @@ const Grid = () => {
           <ImageBox image={iland} style={{ opacity: '0.8', height: '80%' }} />
         </Col>
         <Col style={gridElemStyle}></Col>
-        <Col style={fullWidthRow}>Yolo</Col>
-        <Waves style={waveRow} />
-        <Col style={fullWidthRow}>Yolo</Col>
+        <Col style={fullWidthRow}></Col>
+        <Waves />
+        <Col style={fullWidthRow}></Col>
       </Row>
       <Row style={rowStyle}>
         <Col></Col>
