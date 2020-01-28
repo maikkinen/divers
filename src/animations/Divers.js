@@ -27,7 +27,7 @@ const DiversBoat = styled.div`
   overflow-x: hidden;
   overflow-y: auto;
   position: absolute;
-  animation: ${wavering} 10s linear infinite, ${floating} 4s ease-in-out infinite;
+  animation: ${floating} 4s ease-in-out infinite;
   z-index: 1000;
 `
 export default DiversBoat
