@@ -77,7 +77,7 @@ const Grid = () => {
           <ImageBox image={iland} style={{ opacity: '0.8', height: '80%' }} />
         </Col>
         <Col style={gridElemStyle}></Col>
-        <Waves />
+        
         <Col style={fullWidthRow}>
         </Col>
         
@@ -111,58 +111,3 @@ const Grid = () => {
 }
 //<VideoBox video={divergif} />
 export default Grid
-
-/*
-const Grid = () => {
-  return (
-    <Table style={t1}>
-      <Tbody>
-        <Tr style={r2} >
-          <Td style={b2}>Yolo1 </Td>
-          <Td style={b2}>Yolo2 </Td>
-          <Td style={b2}>Yolo3
-            <Ball />
-          </Td>
-          <Td style={b2}>Yolo1 </Td>
-          <Td style={b2}>Yolo1 </Td>
-          <Td style={b2}>Yolo1 </Td>
-          <Td style={b2}>Yolo1 </Td>
-        </Tr>
-
-        <Tr style={r2} >
-          <Td style={b2}>Yolo2 </Td>
-          <Td style={b2}>
-            <ImageBox image={iland} style={{ opacity: '0.8', height: '100%' }} />
-          </Td>
-          <Td style={b2}></Td>
-
-          <Td style={b2}>Yolo2 </Td>
-          <Td style={b2}>Yolo2 </Td>
-          <Td style={b2}>Yolo2 </Td>
-          <Td style={b2}>Yolo2 </Td>
-        </Tr>
-        <Tr style={r2}>
-          <Td style={b2}>Yolo3 </Td>
-          <Td style={b2}>Yolo3 </Td>
-          <Td style={b2}>Yolo3 </Td>
-          <Td style={b2}>Yolo3 </Td>
-          <Td style={b2}>Yolo3 </Td>
-          <Td style={b2}>Yolo3 </Td>
-          <Td style={b2}>Yolo3 </Td>
-        </Tr>
-        <Tr style={r2}>
-          <Td style={b2}>Yolo3 </Td>
-          <Td style={b2}>Yolo3 </Td>
-          <Td style={b2}>Yolo3 </Td>
-          <Td style={b2}>Yolo3 </Td>
-          <Td style={b2}>Yolo3 </Td>
-          <Td style={b2}>Yolo3 </Td>
-          <Td style={b2}>Yolo3 </Td>
-        </Tr>
-      </Tbody>
-    </Table>
-  )
-}
-
-export default Grid
-*/

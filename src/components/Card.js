@@ -9,6 +9,9 @@ const cardStyle = {
   opacity: '0.8',
   overflow: 'hidden',
   borderRadius: '1em',
+  //border: 'solid',
+  //borderColor: '#A27C1A',
+  color: '#513C06',
 }
 
 const CardBox = () => {
