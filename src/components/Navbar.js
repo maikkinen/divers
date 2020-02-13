@@ -3,19 +3,19 @@ import { Container, Navbar, Nav, NavDropdown, Form, FormControl, Button } from '
 
 const containerStyle = {
   width: '100%',
- 
+  height: '10vh',
   position: 'absolute',
   left: '0px',
   top: '0px',
   //padding: '4vh',
-  backgroundColor: 'red',
 }
 
 const navbarStyle = {
-  backgroundColor: 'blue',
+  backgroundColor: '#513C06',
   width: '100%',
   zindex: '100',
   paddingTop: '4vh',
+  paddingBottom: '4vh',
 }
 
 const elementStyle = {
@@ -24,8 +24,8 @@ const elementStyle = {
   backcroundColor: 'red',
   border: 'solid',
   borderRadius: '1em',
-  color: 'yellow',
-  underline: 'none',
+  color: '#BEF8FD',
+  textDecoration: 'none',
   padding: '1vh',
   margin: '2vh',
 }
