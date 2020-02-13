@@ -19,7 +19,7 @@ const waving2 = keyframes` {
 
 const higher = keyframes` {
   0% { height: 13%; }
-  50% { height: 15%; }
+  50% { height: 20%; }
   100% { height: 13%; }
 }`
 
@@ -31,7 +31,7 @@ const wavering = keyframes` {
 
 const OneWave = styled.div`
   width: 100%;
-  height: 20%;
+  height: 15%;
   opacity: 0.6;
   margin: 0 auto;
   background-image: url(${wave});
@@ -42,17 +42,16 @@ const OneWave = styled.div`
 `
 
 const OneWave2 = styled.div`
-  width: 98%;
-  height: 13%;
-  opacity: 0.2;
-  margin: 0 auto;
+  width: 100%;
+  height: 17%;
+  opacity: 0.7;
   background-image: url(${wave});
   position: absolute;
-  left: 1%;
+  left: 0;
   top: 120vh;
   background-repeat: repeat-x;
   animation-delay: 3s;
-  animation: ${wavering} 5s ease-out infinite, ${higher} 10s linear infinite
+  animation: ${higher} 10s linear infinite
 `
 const OneWave3 = styled.div`
   width: 100%;

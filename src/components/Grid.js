@@ -1,6 +1,8 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import ImageBox from './ImageBox'
+import VideoBox from './VideoBox'
+import CardBox from './Card'
 import Ball from '../animations/Ball'
 import Waves from '../animations/Waves'
 import DiversBoat from '../animations/Divers'
@@ -8,6 +10,7 @@ import DiversBoat from '../animations/Divers'
 import dock from '../pics/bg_elems_cabin.png'
 import iland from '../pics/bg_iland.png'
 import mountains from '../pics/bg_mountains.png'
+import divergif from '../pics/diver_and_shark.gif'
 
 const containerStyle = {
   margin: '0',
@@ -34,13 +37,11 @@ const rowStyle = {
 }
 
 const fullWidthRow = {
-  width: '100%',
-  //position: 'relative',
-  height: '1em',
-  borderRadius: '0em',
-  margin: '0em',
+  width: '100vw',
+  height: '10vh',
+  margin: '3vh',
+  padding: '3vh',
   //backgroundColor: 'yellow',
-
 }
 
 const gridDiversStyle = {
@@ -55,9 +56,15 @@ const gridElemStyle = {
   width: '30em',
   height: '15em',
   padding: '0.25em',
-  margin: '0.25em',
+  margin: '1em',
   //backgroundColor: 'red',
 }
+
+const contentBoxStyle = {
+  borderRadius: '1em',
+}
+
+//<VideoBox video={divergif} style={contentBoxStyle} />
 
 const Grid = () => {
   return (
@@ -70,13 +77,15 @@ const Grid = () => {
           <ImageBox image={iland} style={{ opacity: '0.8', height: '80%' }} />
         </Col>
         <Col style={gridElemStyle}></Col>
-        <Col style={fullWidthRow}></Col>
         <Waves />
-        <Col style={fullWidthRow}></Col>
+        <Col style={fullWidthRow}>
+        </Col>
+        
+        <Col style={fullWidthRow}>
+        </Col>
       </Row>
-      
+
       <Row style={rowStyle}>
-        <Col></Col>
         <Col style={gridElemStyle}>
         </Col>
         <Col style={gridElemStyle}>
@@ -85,6 +94,9 @@ const Grid = () => {
         <Col style={gridElemStyle}>
           <DiversBoat style={gridDiversStyle} />
         </Col>
+        <Col style={fullWidthRow}>
+        </Col>
+        <CardBox/>
       </Row>
 
       <Row style={rowStyle} >
@@ -92,12 +104,12 @@ const Grid = () => {
         <Col style={gridElemStyle}>
           <ImageBox image={dock} />
         </Col>
+        <Col style={gridElemStyle}></Col>
       </Row>
-
     </Container>
   )
 }
-
+//<VideoBox video={divergif} />
 export default Grid
 
 /*

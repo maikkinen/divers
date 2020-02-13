@@ -10,6 +10,8 @@ const containerStyle = {
   //padding: '4vh',
 }
 
+//colors from UI coloring sketchbook pages 106-107
+
 const navbarStyle = {
   backgroundColor: '#513C06',
   width: '100%',
@@ -21,12 +23,11 @@ const navbarStyle = {
 const elementStyle = {
   width: '5vw',
   height: '5vh',
-  backcroundColor: 'red',
   border: 'solid',
   borderRadius: '1em',
   color: '#BEF8FD',
   textDecoration: 'none',
-  padding: '1vh',
+  padding: '1%',
   margin: '2vh',
 }
 
@@ -35,9 +36,11 @@ const NavbarElem = () => {
     <Container style={containerStyle}>
       <Navbar style={navbarStyle} bg="light" expand="lg" >
         <Nav className="mr-auto">
-          <Nav.Link style={elementStyle} href="#home">Animations</Nav.Link>
-          <Nav.Link style={elementStyle} href="#link">Diving</Nav.Link>
-          <Nav.Link style={elementStyle} href="#link">Cooking</Nav.Link>
+          <Nav.Link style={elementStyle} href="#home">Dockyard</Nav.Link>
+          <Nav.Link style={elementStyle} href="#animations">Animations</Nav.Link>
+          <Nav.Link style={elementStyle} href="#cooking">Cooking</Nav.Link>
+          <Nav.Link style={elementStyle} href="#comics">Comics</Nav.Link>
+
         </Nav>
 
       </Navbar>
