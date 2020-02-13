@@ -23,7 +23,7 @@ const CardBox = () => {
           <Card.Text>
             <br/>
             To me it seems that Front-end Development is often like diving: when you jump into the water, you're after a certain kind of beautiful fish.
-            Sometimes you get lucky (or a superb div...coder) and immediately find the one you wished to see.
+            Sometimes you get lucky (or you're just a superb div...coder) and immediately find the one you wished to see.
             Sometimes, then, you get lost in the miraculous underwater world.
           </Card.Text>
         </Card.Body>
