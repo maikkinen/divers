@@ -1,5 +1,6 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
+import { Container} from 'react-bootstrap'
+import NavbarElem from './components/Navbar'
 import Grid from './components/Grid'
 
 import watercolor from './pics/watercol_texture.jpg'
@@ -24,7 +25,8 @@ const bgStyle = {
 const App = () => {
   return (
     <Container style={bgStyle}>
-      <Grid />
+      <NavbarElem/>
+      <Grid/>
     </Container>
   )
 }

@@ -1,5 +1,4 @@
 import React from 'react'
-import 'react-super-responsive-table/dist/SuperResponsiveTable'
 import { Container, Row, Col } from 'react-bootstrap'
 import ImageBox from './ImageBox'
 import Ball from '../animations/Ball'
@@ -9,10 +8,6 @@ import DiversBoat from '../animations/Divers'
 import dock from '../pics/bg_elems_cabin.png'
 import iland from '../pics/bg_iland.png'
 import mountains from '../pics/bg_mountains.png'
-import divers from '../pics/divers_graphic1.png'
-import blue_shell from '../pics/seashell_blue.jpg'
-import seashells from '../pics/seashells_cabarete.jpg'
-
 
 const containerStyle = {
   margin: '0',
@@ -35,7 +30,6 @@ const rowStyle = {
   borderRadius: '1em',
   margin: '1em',
   padding: '1em',
-  overflow: 'hidden',
   //backgroundColor: 'blue',
 }
 
@@ -68,6 +62,7 @@ const gridElemStyle = {
 const Grid = () => {
   return (
     <Container style={containerStyle}>
+
       <Row style={rowStyle} >
         <Col style={gridElemStyle}></Col>
         <Col style={gridElemStyle}>
@@ -79,6 +74,7 @@ const Grid = () => {
         <Waves />
         <Col style={fullWidthRow}></Col>
       </Row>
+      
       <Row style={rowStyle}>
         <Col></Col>
         <Col style={gridElemStyle}>
@@ -97,6 +93,7 @@ const Grid = () => {
           <ImageBox image={dock} />
         </Col>
       </Row>
+
     </Container>
   )
 }
