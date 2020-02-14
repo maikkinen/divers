@@ -88,6 +88,7 @@ const Grid = () => {
         <Col style={gridElemStyle}>
         </Col>
         <Col style={gridElemStyle}>
+          <h1>"Coding is often like...diving?"</h1>
           <ImageBox image={mountains} style={{ opacity: '0.5' }} />
         </Col>
         <Col style={gridElemStyle}>
