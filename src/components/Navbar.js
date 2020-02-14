@@ -36,10 +36,10 @@ const NavbarElem = () => {
     <Container style={containerStyle}>
       <Navbar style={navbarStyle} bg="light" expand="lg" >
         <Nav className="mr-auto">
-          <Nav.Link style={elementStyle} href="#home">Dockyard</Nav.Link>
-          <Nav.Link style={elementStyle} href="#animations">Animations</Nav.Link>
-          <Nav.Link style={elementStyle} href="#cooking">Cooking</Nav.Link>
-          <Nav.Link style={elementStyle} href="#comics">Comics</Nav.Link>
+          <Nav.Link style={elementStyle} href="/home">Dockyard</Nav.Link>
+          <Nav.Link style={elementStyle} href="/animations">Animations</Nav.Link>
+          <Nav.Link style={elementStyle} href="/cooking">Cooking</Nav.Link>
+          <Nav.Link style={elementStyle} href="/comics">Comics</Nav.Link>
 
         </Nav>
 

@@ -47,7 +47,6 @@ const fullWidthRow = {
 const gridDiversStyle = {
   width: '50%',
   height: '50%',
-  overflow: 'hidden',
   backgroundRepeat: 'no-repeat',
   //backgroundColor: 'red',
 }
