@@ -6,6 +6,7 @@ import {
 import { Container } from 'react-bootstrap'
 import NavbarElem from './components/Navbar'
 import Grid from './components/Grid'
+import AnimationGrid from './layouts/animations'
 
 import watercolor from './pics/watercol_texture.jpg'
 
@@ -68,15 +69,13 @@ const App = () => {
             <Nav className="mr-auto">
               <Link style={elementStyle} to="/">Dockyard</Link>
               <Link style={elementStyle} to="/animations">Animations</Link>
-              <Link style={elementStyle} to="/cooking">Cooking</Link>
               <Link style={elementStyle} to="/comics">Comics</Link>
             </Nav>
           </Navbar>
         </Container>
       </Container>
       <Route exact path="/" render={() => <Grid/>} />
-      <Route path="/animations" render={() => <Grid/>} />
-      <Route path="/cooking" render={() => <Grid/>} />
+      <Route path="/animations" render={() => <AnimationGrid/>} />
       <Route path="/comics" render={() => <Grid/>} />
     </Router>
   )
