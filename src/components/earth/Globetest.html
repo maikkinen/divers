@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://www.webglearth.com/v2/api.js"></script>
+    <script>
+      function initialize() {
+        var earth = new WE.map("earth_div");
+        WE.tileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(
+          earth
+        );
+
+        var marker = WE.marker([51.5, -0.09]).addTo(earth);
+        marker
+          .bindPopup(
+            "<b>London, UK</b><br>Coronavirus gives airlines 'unprecedented shock'<br/><span style='font-size:10px;color:#999'>Published: March 31, 2020. </br> Tags: travelling, economy</span>",
+            { maxWidth: 150, closeButton: true }
+          )
+          .openPopup();
+
+        var marker2 = WE.marker([30.058056, 31.228889]).addTo(earth);
+        marker2.bindPopup(
+          "<b>Cairo, EG</b><br>Guardian reporter threated to be expelled<br/><span style='font-size:10px;color:#999'>Published: March 29, 2020. </br> Tags: government, politics</span>", 
+            { maxWidth: 150, closeButton: true
+        });
+
+        var marker3 = WE.marker([60.1102609, 24.8786016]).addTo(earth);
+        marker3.bindPopup(
+          "<b>Helsinki, FIN</b><br>Finland is dragging with COVID-19 testing<br/><span style='font-size:10px;color:#999'>Published: March 30, 2020. </br> Tags: government, science</span>", 
+            { maxWidth: 150, closeButton: true
+        });
+
+        var marker4 = WE.marker([30.0332195, -91.0031737]).addTo(earth);
+        marker4.bindPopup(
+          "<b>New Orleans, US</b><br>More than 1,300 coronavirus cases confirmed<br/><span style='font-size:10px;color:#999'>Published: March 29, 2020. </br> Tags: government, testing</span>", 
+            { maxWidth: 150, closeButton: true
+        });
+
+        var markerCustom = WE.marker([50, -9], "/img/logo-webglearth-white-100.png", 100, 24).addTo(earth);
+        markerCustom.bindPopup(
+          "<b>Custom Poppie.<br/><span style='font-size:10px;color:#999'>Published: May 29, 2020. </br> Tags: tech, testing</span>", 
+            { maxWidth: 150, closeButton: true
+        });
+
+        earth.setView([46.8011, 8.2266], 2);
+      }
+    </script>
+    <link rel="stylesheet" type="text/css" href="myStyle.css" />
+    <title>Corona Globe</title>
+  </head>
+  <body onload="initialize()">
+    <div class="split" id="earth_div"></div>
+
+    <div class="split" id="block">
+      <h2 id="title">Yolo Test Text Yolo</h2>
+      <div class="controlPanel">
+        <h4>Control Panel 1</h4>
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+      </div>
+      <div class="controlPanel">
+        <h4>Control Panel 2</h4>
+        <p>Text 1 which could be a title or something else relevant.</p>
+        <p>Text 2 which could be a title or something else relevant.</p>
+        <p>Text 3 which could be a title or something else relevant.</p>
+      </div>
+      <script>
+        console.log("yolo yolo yolo earth!");
+
+        /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches(".dropbtn")) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains("show")) {
+                openDropdown.classList.remove("show");
+              }
+            }
+          }
+        };
+      </script>
+    </div>
+  </body>
+</html>

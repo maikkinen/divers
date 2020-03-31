@@ -40,9 +40,7 @@ const NavbarElem = () => {
           <Nav.Link style={elementStyle} href="/animations">Animations</Nav.Link>
           <Nav.Link style={elementStyle} href="/cooking">Cooking</Nav.Link>
           <Nav.Link style={elementStyle} href="/comics">Comics</Nav.Link>
-
         </Nav>
-
       </Navbar>
     </Container>
   )
