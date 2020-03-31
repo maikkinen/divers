@@ -7,7 +7,7 @@ import { Container } from 'react-bootstrap'
 import NavbarElem from './components/Navbar'
 import Grid from './components/Grid'
 import AnimationGrid from './layouts/animations'
-
+import ThreeTestComp from './components/ThreeTest'
 import watercolor from './pics/watercol_texture.jpg'
 
 import { Navbar, Nav } from 'react-bootstrap'
@@ -76,7 +76,7 @@ const App = () => {
       </Container>
       <Route exact path="/" render={() => <Grid/>} />
       <Route path="/animations" render={() => <AnimationGrid/>} />
-      <Route path="/comics" render={() => <Grid/>} />
+      <Route path="/comics" render={() => <ThreeTestComp/>} />
     </Router>
   )
 }
